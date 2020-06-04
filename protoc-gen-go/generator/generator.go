@@ -2088,7 +2088,7 @@ func (g *Generator) generateMessageStruct(mc *msgCtx, topLevelFields []topLevelF
 	for _, pf := range topLevelFields {
 		pf.decl(g, mc)
 	}
-	g.generateInternalStructFields(mc, topLevelFields)
+	// g.generateInternalStructFields(mc, topLevelFields)
 	g.P("}")
 }
 
